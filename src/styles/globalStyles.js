@@ -1,11 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import { primaryColor,
         primaryDarkColor
-
-
 } from '../config/colors';
-export default createGlobalStyle`
-*{
+const GlobalStyle = createGlobalStyle`
+*, body{
     margin: 0;
     padding: 0;
     outline: none;
@@ -14,7 +12,6 @@ export default createGlobalStyle`
 body{
     font-family: sans-serif;
     background: ${primaryDarkColor};
-    color: ${primaryColor};
 }
 html, body, #root{
     height: 100%;
@@ -45,3 +42,7 @@ export const Container = styled.section`
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0, 0.1);
 `;
+
+
+
+export default GlobalStyle;

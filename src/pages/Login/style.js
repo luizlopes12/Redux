@@ -11,5 +11,5 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 80px;
+    font-size: 70px;
 `;
