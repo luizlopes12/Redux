@@ -6,6 +6,7 @@ const Login = () => {
     <Container>
         <Title isRed={false}>Login <small>Opa</small></Title>
         <Paragraph>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</Paragraph>
+        <button type='button'>Enviar</button>
     </Container>
   )
 }
