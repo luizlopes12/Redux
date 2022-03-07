@@ -1,16 +1,12 @@
-import GlobalStyle from "./styles/globalStyles";
-import { BrowserRouter } from "react-router-dom";
-import history from "./services/history";
-import Rotas from "./routes";
-import Header from "./components/Header";
-function App() {
-  return (
-    <BrowserRouter history={history}>
-      <GlobalStyle/>
-      <Header/>
-      <Rotas/>
-    </BrowserRouter>
-  );
-}
+import React from 'react';
 
-export default App;
+import Layout from './layout';
+import Pages from './pages';
+
+export default function App() {
+	return (
+		<Layout>
+			<Pages />
+		</Layout>
+	);
+}
