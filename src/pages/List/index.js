@@ -3,7 +3,7 @@ import Car from '../../components/Car';
 import { useSelector } from 'react-redux';
 
 export default function List() {
-	const cars = useSelector(state => state)
+	const cars = useSelector(state => state.cars)
 	
 	return (
 		<div className="container-fluid">
