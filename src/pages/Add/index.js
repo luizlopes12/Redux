@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { addCar } from '../../store/cars';
+import { showMessage, hideMessage } from '../../store/layout';
 import { useDispatch } from 'react-redux';
 export default function Add() {
 
@@ -12,6 +13,8 @@ export default function Add() {
 		e.preventDefault()
 		dispatch(addCar(form))
 		setForm({name: '', url:''})
+		dispatch(showMessage())
+		setTimeout(()=> {dispatch(hideMessage())},2500)
 	}
 	return (
 		<form className="container mt-5" onSubmit={onSubmit}>
