@@ -21,7 +21,7 @@ const INITIAL_STATE = {
     ]
   };
   const course = (state = INITIAL_STATE, action) =>{
-    if(action.type == 'TOGGLE_LESSON'){
+    if(action.type === 'TOGGLE_LESSON'){
       return {...state, activeLesson: action.lesson, activeModule: action.module}
     }
     return state
