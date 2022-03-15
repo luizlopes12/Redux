@@ -9,6 +9,7 @@ const Cart = ({cartItems}) => {
           <li key={item.id}>
             <p>{item.name}</p>
             <span>{item.desc.length > 20 ? item.desc.substring(0,20)+'...' : item.desc}</span>
+            <p>{item.quantity}</p>
             </li>
         ))}
       </ul>
