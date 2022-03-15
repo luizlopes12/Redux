@@ -3,27 +3,27 @@ const INITIAL_STATE = {
         {
             id: 1,
             name: "Item1",
-            desc: "Seila"
+            desc: "Opa de boa, item saindo fresquinho"
         },
         {
             id: 2,
             name: "Item2",
-            desc: "Seila"
+            desc: "aaaaaaaaaaaaaa"
         },
         {
             id: 3,
             name: "Item3",
-            desc: "Seila"
+            desc: "dwdadadddwdwdad"
         },
         {
             id: 4,
             name: "Item4",
-            desc: "Seila"
+            desc: "Seildwadadadadadada"
         },
         {
             id: 5,
             name: "Item5",
-            desc: "Seila"
+            desc: "Sei7d87awd87awd8a7dawdadla"
         },
     ]
 }

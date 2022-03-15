@@ -1,15 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
-const Cart = ({cartItems, dispatch}) => {
+import { Container } from './styled'
+const Cart = ({cartItems}) => {
   return (
-    <div style={{height: '94vh', width: '100%', background: 'blue'}}>
+    <Container>
       <ul>
         {cartItems!== undefined && cartItems.map((item)=>(
-          <li key={item.id}>{item.name} <br/> {item.desc}</li>
+          <li key={item.id}>
+            <p>{item.name}</p>
+            <span>{item.desc.length > 20 ? item.desc.substring(0,20)+'...' : item.desc}</span>
+            </li>
         ))}
       </ul>
 
-    </div>
+    </Container>
   )
 }
 const mapStateToProps = (state) =>{

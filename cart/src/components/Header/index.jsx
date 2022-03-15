@@ -6,7 +6,7 @@ import Badge  from '@mui/material/Badge'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Header = ({cartItems}) => {
   return (
-    <Container style={{display: 'flex', justifyContent: 'space-between'}}>
+    <Container>
         <Link to='/'>Pagina inicial</Link>
         <Link to='/cart'><Badge color='warning' badgeContent={cartItems.length}><ShoppingCartIcon color='success' /></Badge></Link>
     </Container>
