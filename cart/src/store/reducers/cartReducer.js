@@ -1,9 +1,10 @@
-import INITIAL_STATE from "../../data/items";
+const INITIAL_STATE = {}
 const cartReducer = (state = INITIAL_STATE, action) =>{
     if(action.type === 'ADD_CART'){
-        return[...state, action.item]
+        console.log('opa')
     }
-    return false
+
+    return state
 }
 
 export default cartReducer;

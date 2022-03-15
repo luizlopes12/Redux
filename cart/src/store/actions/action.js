@@ -1,6 +1,9 @@
-export function addToCart(item){
+const addToCart = (cart, item) =>{
     return{
         type: 'ADD_CART',
-        item
+        item,
+        cart
     }
 }
+
+export default addToCart;

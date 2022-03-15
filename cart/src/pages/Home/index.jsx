@@ -1,8 +1,9 @@
 import React from 'react'
-import { connect, useDispatch } from 'react-redux'
-const Home = ({items}) => {
+import { connect } from 'react-redux'
+import addToCart from '../../store/actions/action'
+const Home = ({items, cart, dispatch}) => {
   const handleAdd = (item) =>{
-    useDispatch(addToCart(item))
+    dispatch(addToCart(cart, item))
   }
   return (
     <div style={{height: '94vh', width: '100%', background: 'red'}}>
@@ -18,4 +19,4 @@ const Home = ({items}) => {
   )
 }
 
-export default connect(state =>({items: state.homeReducer.Items}))(Home)
+export default connect(state =>({items: state.homeReducer.Items, cart: state.cartReducer}))(Home)
