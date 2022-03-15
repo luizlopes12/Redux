@@ -2,8 +2,6 @@ const INITIAL_STATE = {
     items: [
 
     ]
-
-    
 }
 const cartReducer = (state = INITIAL_STATE, action) =>{
     if(action.type === 'ADD_CART'){
