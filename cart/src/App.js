@@ -1,3 +1,5 @@
+import React from 'react';
+import GlobalStyle from './global/GlobalStyles';
 import { 
   BrowserRouter as Router,
   Routes,
@@ -11,6 +13,7 @@ import { Provider } from 'react-redux';
 function App() {
   return (
     <Provider store={store}>
+    <GlobalStyle/>
     <Router>
       <Header/>
       <Routes>
